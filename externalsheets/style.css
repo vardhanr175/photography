@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+
+/* #carouselExampleIndicators{
+    position: sticky;
+    top: 0px;
+    z-index: -1;
+} */
+.jersey-texts{
+    font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cursi-texts{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+/* navar and the carousel css goes here */
+.nav-create {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar {
+    width: 80%;
+    position: fixed;
+    top: 0px;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #4c574b!important;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+/* this is for the scrolling of images css goes here*/
+.container.slideshow{
+    margin-top: 50px;
+}
+.slide-wrapper .img-list{
+    display: grid;
+    gap:18px;
+    grid-template-columns: repeat(7,1fr);
+    overflow-x: auto;
+    /* scrollbar-width: none; */
+    margin-bottom: 10px;
+}
+.slide-wrapper .img-list::-webkit-scrollbar{
+    display: none;
+}
+
+.slide-wrapper{
+    position: relative;
+}
+.slide-wrapper .slide-button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    top: 50%;
+    padding-bottom: 10px;
+    transform: translateY(-50%);
+}
+.slide-wrapper .slide-button#prev-slide{
+    left: -20px;
+}
+.slide-wrapper .slide-button#next-slide{
+    right: -20px;
+}
+.grid-image-container{
+    padding-top: 5px;
+    padding-bottom: 70px;
+}
+/* matter with pic css goes here */
+
+.image-item {
+    box-shadow: -20px 15px 10px 5px #3d3a37;
+}
+.matter-contain{
+    margin-top: 50px;
+}
+/*for the full image css goes here*/
+.full-image-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(../Images/full-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.matter-of-full-img{
+    width: 35%;
+    color: #535166;
+    /* position: absolute;
+    top: 6%;
+    left: 40%; */
+}
+.matter-of-full-img p{
+    font-size: 4vw;
+}
+/* css for the only text section goes here */
+.container-of-matter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.something-matter{
+    text-align: center;
+} 
+.something-matter .header-text{
+    font-weight: 700;
+    font-size: 4vh;
+}
+.something-matter .inner-text{
+    font-weight: 500;
+    font-size: 3vh;
+}
+/* css for the matter with the image slider goes here */
+.slider {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+    margin: auto;
+
+}
+
+img.display {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    transform: translateY(-50%);
+   
+}
+
+.slider button.prev {
+    left: 15px;
+}
+
+.slider button.next {
+    right: 15px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.firsthead {
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+.innertext{
+    font-size: 2vw;
+}
+.slides img{
+    width: 100%;
+    height: 500px;
+    border-radius: 3%;
+}
+.matter-img-slider{
+    margin: 40px 0px 10px 0px;
+}
+
+/* css for the footer goes here */
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #595c4d;
+}
+.contact-details{
+    color: black
+}
+@media (min-width:993px) {
+/* navar and the carousel css goes here */
+    .navbar-nav {
+        margin: auto;
+    }
+
+    #carouselExampleIndicators {
+        height: 700px;
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: 700px;
+        width: 100%;
+    }
+    .text-container {
+        position: absolute;
+        top: 30%;
+        width: 400px;
+        color: #4c574b !important;
+        margin-left: 18%;
+    }
+    
+    .text-container h2 {
+        font-size: 40px;
+        font-weight:700;
+    }
+
+/* this is for the scrolling of images css goes here*/
+    .slide-wrapper .img-list .image-item {
+        width: 425px;
+        height: 700px;
+        object-fit: cover;
+    }
+/* this is for the grid system css goes here */
+.grid-container {
+    width: 100%;
+    height: 750px;
+    position: relative;
+
+}
+
+.image-1 {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 23%;
+    height: 60%;
+}
+
+.image-2 {
+    position: absolute;
+    top: 1%;
+    left: 25%;
+    width: 23%;
+    height: 60%;
+}
+
+.image-5 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    width: 49%;
+    height: 37%;
+}
+
+.image-6 {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    width: 47%;
+    height: 36%;
+}
+
+.image-3 {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 24%;
+    height: 60%;
+}
+
+.image-4 {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 24%;
+    height: 60%;
+}
+
+.grid-image {
+    border-radius: 3%;
+}
+}
+
+@media (min-width:577px) and (max-width:992px) {
+/* navar and the carousel css goes here */
+
+    #carouselExampleIndicators {
+        height: 400px;
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: 400px;
+        width: 100%;
+    }
+    .text-container {
+        position: absolute;
+        top: 40%;
+        width: 300px;
+        color: #4c574b !important;
+        margin-left: 20%;
+    }
+    
+    .text-container h2 {
+        font-size: 30px;
+        font-weight:600;
+    }
+}
+/* this is for the scrolling of images css goes here*/
+
+.slide-wrapper .img-list .image-item {
+    width: 325px;
+    height: 500px;
+    object-fit: cover;
+}
+/* this is for the grid system css goes here */
+.grid-container {
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    position: relative;
+
+}
+
+.image-1 {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 23%;
+    height: 60%;
+}
+
+.image-2 {
+    position: absolute;
+    top: 1%;
+    left: 25%;
+    width: 23%;
+    height: 60%;
+}
+
+.image-5 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    width: 49%;
+    height: 37%;
+}
+
+.image-6 {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    width: 47%;
+    height: 36%;
+}
+
+.image-3 {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 24%;
+    height: 60%;
+}
+
+.image-4 {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 24%;
+    height: 60%;
+}
+
+.grid-image {
+    border-radius: 3%;
+}
+@media (max-width:576px) {
+/* navar and the carousel css goes here */
+    #carouselExampleIndicators {
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: 300px;
+        width: 100%;
+    }
+    .text-container {
+        position: absolute;
+        top: 40%;
+        width: 40%;
+        color: #4c574b !important;
+        margin-left: 25%;
+    }
+    
+    .text-container h2 {
+        font-size: 20px;
+        font-weight:600;
+    }
+    /* this is for the scrolling of images css goes here*/
+
+.slide-wrapper .img-list .image-item {
+    width: 224px;
+    height: 350px;
+    object-fit: cover;
+}
+/* this is for the grid system css goes here */
+.grid-container {
+    width: 100%;
+    margin-top: 50px;
+    height: 1000px;
+    position: relative;
+}
+.image-1{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 31%;
+    width: 48%;
+    
+}
+.image-2{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    height: 31%;
+    width: 48%;
+    
+}
+.image-5{
+    position: absolute;
+    top: 33%;
+    height: 17%;
+    width: 98%;
+    left: 1%;
+    
+}
+.image-3{
+    position: absolute;
+    top: 51%;
+    height: 31%;
+    left: 1%;
+    width: 48%;
+}
+.image-4{
+    position: absolute;
+    top: 51%;
+    height: 31%;
+    right: 1%;
+    width: 48%;
+}
+.image-6{
+    position: absolute;
+    bottom: 1%;
+    height: 16%;
+    width: 98%;
+    left: 1%;
+}
+.grid-image {
+    border-radius: 3%;
+}
+}
